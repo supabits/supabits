@@ -13,6 +13,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint src/",
+    "format": "prettier --write src/",
     "type-check": "tsc --noEmit"
   },
   "peerDependencies": {
@@ -20,12 +21,15 @@
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
+    "@repo/prettier-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/react": "^18.2.61",
     "autoprefixer": "^10.4.18",
     "postcss": "^8.4.35",
+    "prettier": "^3.3.3",
     "tailwindcss": "^3.4.10",
     "typescript": "^5.3.3"
-  }
+  },
+  "prettier": "@repo/prettier-config"
 }
