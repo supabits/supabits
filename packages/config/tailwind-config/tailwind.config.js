@@ -1,7 +1,7 @@
-import type { Config } from 'tailwindcss';
+/** @typedef {import("tailwindcss").Config} Config */
 
-// We want each package to be responsible for its own content.
-const config: Config = {
+/** @type Config */
+module.exports = {
   content: [
     '../../packages/**/src/**/*.tsx',
     '../../apps/**/*.tsx',
@@ -11,4 +11,3 @@ const config: Config = {
   theme: {},
   plugins: [],
 };
-export default config;
