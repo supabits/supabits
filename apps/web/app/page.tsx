@@ -1,12 +1,9 @@
-import { Card } from '@repo/ui/card';
+import { Button } from '@repo/ui/button';
 
 export default function Home() {
   return (
     <div className="text-sm font-medium">
-      Hello World
-      <Card title="Hello" href="https://example.com">
-        This is a card
-      </Card>
+      <Button>Click me</Button>
     </div>
   );
 }
